@@ -20,7 +20,7 @@ const server = new Hapi.Server({
 
 (async () => {
   const host = process.env.MONGO_URL || 'localhost';
-  const connectionString = `mongodb://${host}/heroes`;
+  const connectionString = `${host}/heroes`;
   const connection = await MongoClient.connect(connectionString, {
     useNewUrlParser: true,
   });
