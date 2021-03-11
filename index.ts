@@ -20,7 +20,8 @@ const server = new Hapi.Server({
 
 (async () => {
   const host = process.env.MONGO_URL || 'localhost';
-  const connectionString = `${host}/heroes`;
+  const connectionString = `mongodb://alexandruag-cosmosdb:EMFxa32x1h46nKheVo9EOKSQfA1KrReZhuSGXjN0SAaLzGFej20hVXaidujnRwGDXy8OSwMebLFVKXV5gDzD7A==@alexandruag-cosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@alexandruag-cosmosdb@/heroes`;
+#  const connectionString = `${host}/heroes`;
   const connection = await MongoClient.connect(connectionString, {
     useNewUrlParser: true,
   });
