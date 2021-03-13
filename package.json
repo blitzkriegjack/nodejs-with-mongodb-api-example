@@ -10,7 +10,7 @@
     "dev:watch": "npx concurrently \"npm run build:watch\" \"npm run dev:run\"",
     "dev:run": "npx nodemon lib/index.js",
     "start": "node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
