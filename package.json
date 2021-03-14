@@ -9,7 +9,6 @@
     "dev": "npx concurrently \"npm run build\" \"npm run dev:run\"",
     "dev:watch": "npx concurrently \"npm run build:watch\" \"npm run dev:run\"",
     "dev:run": "npx nodemon lib/index.js",
-#    "start": "node index.ts",
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\""
   },
